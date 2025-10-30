@@ -3,7 +3,13 @@
 Eu não sei se isso funciona.  
 
 ## Instalação
+Clone o repositório:  
+`git clone https://github.com/aksaraymalaklisi/aula_backend_2910.git`  
 
+Na pasta do repositório, rode o contêiner:  
+`docker compose up -d` (irá buildar automaticamente, caso contrário: `docker compose up -d --build`)  
+
+Depois disso, crie o projeto do Laravel no contêiner `app`:  
 `docker compose exec app composer create-project laravel/laravel src`  
 `docker compose exec app php artisan key:generate`  
 
